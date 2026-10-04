@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | Workout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="history.html">History</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main class="workout-page">
+
+    <div class="simple-title">
+        <span class="tag">TODAY'S PLAN</span>
+        <h1>Full Body Workout 💪</h1>
+        <p>Complete the exercises below.</p>
+    </div>
+
+
+    <div class="workout-card-list">
+
+        <label class="exercise">
+            <input type="checkbox" class="exerciseCheck" onchange="updateWorkout()">
+            <span class="exercise-icon">🚶</span>
+            <span class="exercise-details">
+                <strong>Warm-up Walk</strong>
+                <small>10 minutes • Cardio</small>
+            </span>
+        </label>
+
+
+        <label class="exercise">
+            <input type="checkbox" class="exerciseCheck" onchange="updateWorkout()">
+            <span class="exercise-icon">🦵</span>
+            <span class="exercise-details">
+                <strong>Squats</strong>
+                <small>20 repetitions • Legs</small>
+            </span>
+        </label>
+
+
+        <label class="exercise">
+            <input type="checkbox" class="exerciseCheck" onchange="updateWorkout()">
+            <span class="exercise-icon">💪</span>
+            <span class="exercise-details">
+                <strong>Push-ups</strong>
+                <small>15 repetitions • Upper body</small>
+            </span>
+        </label>
+
+
+        <label class="exercise">
+            <input type="checkbox" class="exerciseCheck" onchange="updateWorkout()">
+            <span class="exercise-icon">⭐</span>
+            <span class="exercise-details">
+                <strong>Jumping Jacks</strong>
+                <small>20 repetitions • Cardio</small>
+            </span>
+        </label>
+
+
+        <label class="exercise">
+            <input type="checkbox" class="exerciseCheck" onchange="updateWorkout()">
+            <span class="exercise-icon">🧘</span>
+            <span class="exercise-details">
+                <strong>Plank</strong>
+                <small>30 seconds • Core</small>
+            </span>
+        </label>
+
+    </div>
+
+
+    <div class="workout-progress">
+
+        <div>
+            <strong id="workoutPercentage">0%</strong>
+            completed
+        </div>
+
+        <div class="progress">
+            <div id="workoutProgressBar"></div>
+        </div>
+
+        <p id="workoutMessage">
+            Let's get started!
+        </p>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

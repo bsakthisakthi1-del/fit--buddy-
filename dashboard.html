@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="workout.html">Workout</a>
+        <a href="profile.html">Profile</a>
+        <a href="#" onclick="logoutUser()">Logout</a>
+    </nav>
+
+</header>
+
+<main class="app-container">
+
+    <div class="page-title">
+        <div>
+            <span class="tag">MY DASHBOARD</span>
+            <h1>Hello, <span id="dashboardName">User</span> 👋</h1>
+            <p>Here's your fitness summary.</p>
+        </div>
+
+        <div class="date-box" id="todayDate"></div>
+    </div>
+
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <div class="stat-icon">🔥</div>
+            <div>
+                <strong id="calorieStat">0</strong>
+                <small>Calories</small>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">💧</div>
+            <div>
+                <strong id="waterStat">0</strong>
+                <small>Water glasses</small>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">🏋️</div>
+            <div>
+                <strong id="workoutStat">0%</strong>
+                <small>Workout</small>
+            </div>
+        </div>
+
+        <div class="stat">
+            <div class="stat-icon">🧮</div>
+            <div>
+                <strong id="bmiStat">--</strong>
+                <small>BMI</small>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+        <div class="panel">
+            <div class="panel-heading">
+                <div>
+                    <span>DAILY WORKOUT</span>
+                    <h2>Today's Progress</h2>
+                </div>
+                <span class="panel-emoji">💪</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">
+                Start your workout to track progress.
+            </p>
+
+            <a href="workout.html" class="btn primary">
+                Open Workout →
+            </a>
+        </div>
+
+
+        <div class="panel">
+
+            <div class="panel-heading">
+                <div>
+                    <span>HYDRATION</span>
+                    <h2>Water Tracker</h2>
+                </div>
+                <span class="panel-emoji">💧</span>
+            </div>
+
+            <div class="water-display">
+                <strong id="waterDisplay">0</strong>
+                <span>/ 8 glasses</span>
+            </div>
+
+            <div class="small-buttons">
+                <button onclick="addWater()">+ Add</button>
+                <button onclick="resetWater()">Reset</button>
+            </div>
+
+        </div>
+
+
+        <div class="panel quick-panel">
+
+            <h3>Quick Tools</h3>
+
+            <a href="bmi.html">🧮 BMI Calculator →</a>
+            <a href="calories.html">🔥 Calorie Calculator →</a>
+            <a href="history.html">📜 View History →</a>
+            <a href="profile.html">👤 My Profile →</a>
+
+        </div>
+
+
+        <div class="panel tip-panel">
+
+            <span>💚 DAILY TIP</span>
+
+            <h2>Stay Consistent</h2>
+
+            <p id="dailyTip">
+                Small healthy habits every day can make
+                a big difference over time.
+            </p>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 FitBuddy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

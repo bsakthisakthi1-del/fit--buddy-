@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="workout.html">Workout</a>
+        <a href="#" onclick="logoutUser()">Logout</a>
+    </nav>
+
+</header>
+
+<main class="app-container">
+
+    <div class="simple-title">
+        <span class="tag">MY ACCOUNT</span>
+        <h1>Profile</h1>
+        <p>Manage your personal fitness information.</p>
+    </div>
+
+
+    <div class="profile-layout">
+
+        <div class="profile-card">
+
+            <div class="profile-avatar">
+                👤
+            </div>
+
+            <h2 id="profileName">User</h2>
+            <p id="profileEmail">email@example.com</p>
+
+            <button class="btn secondary" onclick="toggleTheme()">
+                🌙 Toggle Dark Mode
+            </button>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <h2>Personal Details</h2>
+
+            <label>Full Name</label>
+            <input type="text" id="profileNameInput">
+
+            <label>Email</label>
+            <input type="email" id="profileEmailInput">
+
+            <label>Age</label>
+            <input type="number" id="profileAge" placeholder="Age">
+
+            <label>Fitness Goal</label>
+
+            <select id="profileGoal">
+                <option value="Weight Loss">Weight Loss</option>
+                <option value="Muscle Gain">Muscle Gain</option>
+                <option value="Stay Fit">Stay Fit</option>
+                <option value="Improve Endurance">Improve Endurance</option>
+            </select>
+
+            <button class="btn primary full" onclick="saveProfile()">
+                Save Profile
+            </button>
+
+            <div id="profileMessage" class="message"></div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

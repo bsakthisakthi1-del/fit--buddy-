@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="index.html">Website</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+</header>
+
+<main class="admin-container">
+
+    <div class="simple-title">
+        <span class="tag">ADMINISTRATION</span>
+        <h1>Admin Panel</h1>
+        <p>FitBuddy project management dashboard.</p>
+    </div>
+
+
+    <div class="admin-stats">
+
+        <div>
+            <span>👤</span>
+            <strong id="adminUsers">0</strong>
+            <small>Registered User</small>
+        </div>
+
+        <div>
+            <span>🏋️</span>
+            <strong id="adminWorkout">0%</strong>
+            <small>Workout Progress</small>
+        </div>
+
+        <div>
+            <span>🧮</span>
+            <strong id="adminBMI">--</strong>
+            <small>Latest BMI</small>
+        </div>
+
+        <div>
+            <span>🔥</span>
+            <strong id="adminCalories">--</strong>
+            <small>Calories</small>
+        </div>
+
+    </div>
+
+
+    <div class="panel">
+
+        <div class="panel-heading">
+            <div>
+                <span>USER INFORMATION</span>
+                <h2>Registered Account</h2>
+            </div>
+            <span class="panel-emoji">👤</span>
+        </div>
+
+        <div class="record-list">
+
+            <div>
+                <span>Name</span>
+                <strong id="adminName">No user</strong>
+            </div>
+
+            <div>
+                <span>Email</span>
+                <strong id="adminEmail">No user</strong>
+            </div>
+
+            <div>
+                <span>Goal</span>
+                <strong id="adminGoal">No goal</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="admin-note">
+        ⚠️ This is a frontend demonstration admin panel.
+        A real production admin system requires a secure backend
+        and database.
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

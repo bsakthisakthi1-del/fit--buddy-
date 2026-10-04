@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="calories.html">Calories</a>
+        <a href="workout.html">Workout</a>
+    </nav>
+
+</header>
+
+<main class="calculator-page">
+
+    <div class="simple-title">
+        <span class="tag">HEALTH TOOL</span>
+        <h1>BMI Calculator</h1>
+        <p>Calculate your Body Mass Index.</p>
+    </div>
+
+
+    <div class="calculator-card">
+
+        <label>Weight (kg)</label>
+        <input type="number" id="bmiWeight" placeholder="Example: 60">
+
+        <label>Height (cm)</label>
+        <input type="number" id="bmiHeight" placeholder="Example: 170">
+
+        <button class="btn primary full" onclick="calculateBMI()">
+            Calculate BMI
+        </button>
+
+        <div id="bmiResult" class="result-box">
+            Enter your details.
+        </div>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+
+<header class="navbar">
+    <a href="index.html" class="logo"><span>Fit</span>Buddy</a>
+    <a href="index.html" class="back">← Home</a>
+</header>
+
+<main class="auth-wrapper">
+
+    <div class="auth-card">
+
+        <div class="auth-icon">💚</div>
+
+        <h1>Welcome Back</h1>
+        <p>Login to your FitBuddy account.</p>
+
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter email">
+
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter password">
+
+        <button class="btn primary full" onclick="loginUser()">
+            Login
+        </button>
+
+        <div id="loginMessage" class="message"></div>
+
+        <p class="auth-link">
+            Don't have an account?
+            <a href="signup.html">Create one</a>
+        </p>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

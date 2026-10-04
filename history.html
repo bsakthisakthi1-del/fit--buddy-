@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBuddy | History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+
+    <a href="dashboard.html" class="logo">
+        <span>Fit</span>Buddy
+    </a>
+
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="workout.html">Workout</a>
+        <a href="profile.html">Profile</a>
+    </nav>
+
+</header>
+
+<main class="app-container">
+
+    <div class="simple-title">
+        <span class="tag">YOUR DATA</span>
+        <h1>Fitness History</h1>
+        <p>Your saved fitness information.</p>
+    </div>
+
+
+    <div class="history-grid">
+
+        <div class="history-card">
+            <span>🧮</span>
+            <div>
+                <small>Latest BMI</small>
+                <strong id="historyBMI">--</strong>
+            </div>
+        </div>
+
+
+        <div class="history-card">
+            <span>🔥</span>
+            <div>
+                <small>Daily Calories</small>
+                <strong id="historyCalories">--</strong>
+            </div>
+        </div>
+
+
+        <div class="history-card">
+            <span>🏋️</span>
+            <div>
+                <small>Workout Progress</small>
+                <strong id="historyWorkout">0%</strong>
+            </div>
+        </div>
+
+
+        <div class="history-card">
+            <span>💧</span>
+            <div>
+                <small>Water Today</small>
+                <strong id="historyWater">0</strong>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="panel">
+
+        <div class="panel-heading">
+            <div>
+                <span>FITNESS RECORD</span>
+                <h2>Current Profile</h2>
+            </div>
+            <span class="panel-emoji">📋</span>
+        </div>
+
+        <div class="record-list">
+
+            <div>
+                <span>Name</span>
+                <strong id="historyName">--</strong>
+            </div>
+
+            <div>
+                <span>Goal</span>
+                <strong id="historyGoal">--</strong>
+            </div>
+
+            <div>
+                <span>Age</span>
+                <strong id="historyAge">--</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <button class="btn danger" onclick="clearFitnessData()">
+        Clear Fitness Data
+    </button>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
